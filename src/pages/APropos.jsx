@@ -1,7 +1,37 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Award, Heart, Sparkles, ShieldCheck, Mail, Phone } from "lucide-react";
 import { Reveal, RevealGroup, RevealItem, WordsReveal } from "../components/Motion";
+import Seo, { SITE_URL } from "../components/Seo";
 import { COMPANY, CONTACT } from "../site";
+
+const APROPOS_LD = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  url: `${SITE_URL}/a-propos`,
+  mainEntity: {
+    "@type": "Person",
+    name: "Sasha Libszia",
+    jobTitle: "Consultante en business et finances",
+    description:
+      "Fondatrice de SASHA, elle accompagne les entrepreneuses à structurer, développer et financer leur activité sur les réseaux sociaux.",
+    image: `${SITE_URL}/images/profil.png`,
+    email: CONTACT.email,
+    telephone: "+33745350797",
+    worksFor: {
+      "@type": "Organization",
+      name: "SASHA",
+      url: `${SITE_URL}/`,
+      identifier: { "@type": "PropertyValue", name: "SIREN", value: "903208189" },
+    },
+  },
+  breadcrumb: {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Accueil", item: `${SITE_URL}/` },
+      { "@type": "ListItem", position: 2, name: "À propos", item: `${SITE_URL}/a-propos` },
+    ],
+  },
+};
 
 const VALUES = [
   {
@@ -54,6 +84,14 @@ const FORMAL = [
 export default function APropos() {
   return (
     <>
+      <Seo
+        title="À propos — Sasha Libszia | SASHA"
+        description="Découvrez Sasha Libszia, fondatrice de SASHA : son parcours, ses valeurs et son accompagnement en business consulting et financement pour entrepreneuses."
+        path="/a-propos"
+        image="/images/profil.png"
+        jsonLd={APROPOS_LD}
+      />
+
       {/* ─────────── HEADER ─────────── */}
       <section className="pt-40 pb-20 md:pt-48">
         <div className="container-x">

@@ -1,0 +1,52 @@
+# SASHA — Sasha Libszia
+
+> SASHA est le cabinet de Sasha Libszia, consultante en business et finances. J'accompagne les
+> entrepreneuses à structurer, développer et financer leur activité sur les réseaux sociaux —
+> pour passer du salariat à la liberté grâce au digital.
+
+SASHA est une Société civile immobilière (SCI) immatriculée au Registre national des entreprises
+(SIREN 903 208 189, SIRET 903 208 189 00014), dont l'activité principale est le business
+consulting et le conseil financier pour entrepreneuses.
+
+## Services
+
+- [Business consulting](https://sasha-consulting-vert.vercel.app/): positionnement, structuration d'offre et stratégie
+  de développement pour entrepreneuses.
+- [Stratégie réseaux sociaux](https://sasha-consulting-vert.vercel.app/): contenu, acquisition et tunnel de vente
+  conçus pour convertir.
+- [Conseil financier](https://sasha-consulting-vert.vercel.app/): pilotage des prix, marges, trésorerie et financement
+  de l'activité.
+- [Accompagnement du salariat à la liberté](https://sasha-consulting-vert.vercel.app/): passage à l'activité
+  indépendante à temps plein.
+
+## Pages
+
+- [Accueil](https://sasha-consulting-vert.vercel.app/): présentation de l'approche et des quatre piliers
+  d'accompagnement.
+- [À propos](https://sasha-consulting-vert.vercel.app/a-propos): parcours de Sasha Libszia, valeurs et informations
+  d'immatriculation publiques.
+- [Contact](https://sasha-consulting-vert.vercel.app/contact): coordonnées et formulaire de demande d'accompagnement.
+
+## Méthode d'accompagnement
+
+1. Diagnostic — clarification de l'offre, de l'audience, des chiffres et du temps disponible.
+2. Stratégie — positionnement, offre, plan de contenu.
+3. Déploiement — création, acquisition, financement et suivi des indicateurs.
+4. Liberté — stabilisation des revenus et reprise du contrôle sur son temps.
+
+## Coordonnées
+
+- Email : yandixlucass@gmail.com
+- Téléphone : +33 7 45 35 07 97
+- Adresse : 48 rue Nationale, Bâtiment B — 57660 Hellimer, France
+
+## Informations légales
+
+- Dénomination : SASHA
+- Forme juridique : Société civile immobilière (SCI)
+- SIREN : 903 208 189
+- SIRET : 903 208 189 00014
+- Code APE : 6820B — Location de terrains et d'autres biens immobiliers
+- Capital social : 200 EUR
+- Date d'immatriculation au RNE : 16 septembre 2021
+- Début d'activité : 7 juillet 2021

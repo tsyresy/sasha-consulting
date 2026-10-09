@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+>
+  <url>
+    <loc>https://sasha-consulting-vert.vercel.app/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://sasha-consulting-vert.vercel.app/images/hero.png</image:loc>
+      <image:title>SASHA — business consulting pour entrepreneuses</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sasha-consulting-vert.vercel.app/images/consulting.png</image:loc>
+      <image:title>Conseil en stratégie et financement</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sasha-consulting-vert.vercel.app/a-propos</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://sasha-consulting-vert.vercel.app/images/profil.png</image:loc>
+      <image:title>Sasha Libszia, fondatrice de SASHA</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sasha-consulting-vert.vercel.app/images/accompagnement.png</image:loc>
+      <image:title>Accompagnement d'entrepreneuses</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://sasha-consulting-vert.vercel.app/contact</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>

@@ -1,7 +1,42 @@
 import { useState } from "react";
 import { Mail, Phone, MapPin, ArrowRight, Check, Send } from "lucide-react";
 import { Reveal, RevealGroup, RevealItem, WordsReveal } from "../components/Motion";
+import Seo, { SITE_URL } from "../components/Seo";
 import { COMPANY, CONTACT } from "../site";
+
+const CONTACT_LD = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  url: `${SITE_URL}/contact`,
+  mainEntity: {
+    "@type": "Organization",
+    name: "SASHA",
+    url: `${SITE_URL}/`,
+    email: CONTACT.email,
+    telephone: "+33745350797",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "48 rue Nationale, Bâtiment B",
+      postalCode: "57660",
+      addressLocality: "Hellimer",
+      addressCountry: "FR",
+    },
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "Service client",
+      email: CONTACT.email,
+      telephone: "+33745350797",
+      availableLanguage: "fr",
+    },
+  },
+  breadcrumb: {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Accueil", item: `${SITE_URL}/` },
+      { "@type": "ListItem", position: 2, name: "Contact", item: `${SITE_URL}/contact` },
+    ],
+  },
+};
 
 const SUBJECTS = [
   "Accompagnement business",
@@ -102,6 +137,14 @@ export default function Contact() {
 
   return (
     <>
+      <Seo
+        title="Contact — Réserver un appel découverte | SASHA"
+        description="Contactez Sasha Libszia pour votre accompagnement business : formulaire, email yandixlucass@gmail.com et téléphone +33 7 45 35 07 97."
+        path="/contact"
+        image="/images/logo.jpeg"
+        jsonLd={CONTACT_LD}
+      />
+
       {/* ─────────── HEADER ─────────── */}
       <section className="pt-40 pb-16 md:pt-48">
         <div className="container-x">

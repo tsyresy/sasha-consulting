@@ -13,7 +13,40 @@ import {
   Check,
 } from "lucide-react";
 import { Reveal, RevealGroup, RevealItem, WordsReveal } from "../components/Motion";
+import Seo, { SITE_URL } from "../components/Seo";
 import { CONTACT } from "../site";
+
+const HOME_LD = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Qu'est-ce que SASHA accompagne exactement ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Un accompagnement à 360° : positionnement et structuration d'offre, stratégie de contenu et acquisition sur les réseaux sociaux, puis pilotage financier (prix, marges, trésorerie, financement).",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "À qui s'adresse l'accompagnement SASHA ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Aux entrepreneuses et futures entrepreneuses qui souhaitent structurer leur activité, développer leur visibilité sur les réseaux et passer du salariat à la liberté grâce au digital.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Comment se déroule la méthode ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "En quatre temps : diagnostic, stratégie, déploiement puis liberté. Un cadre qui s'adapte à l'activité, au rythme et aux objectifs de chacune.",
+      },
+    },
+  ],
+  url: `${SITE_URL}/`,
+};
 
 const PILLARS = [
   {
@@ -110,6 +143,13 @@ export default function Home() {
 
   return (
     <>
+      <Seo
+        title="SASHA — Business consulting & financement pour entrepreneuses"
+        description="Sasha Libszia accompagne les entrepreneuses à faire exploser leur business sur les réseaux : stratégie, développement digital et pilotage financier. Du salariat à la liberté."
+        path="/"
+        jsonLd={HOME_LD}
+      />
+
       {/* ─────────── HERO ─────────── */}
       <section
         ref={heroRef}
