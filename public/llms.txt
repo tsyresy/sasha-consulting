@@ -5,8 +5,9 @@
 > pour passer du salariat à la liberté grâce au digital.
 
 SASHA est une Société civile immobilière (SCI) immatriculée au Registre national des entreprises
-(SIREN 903 208 189, SIRET 903 208 189 00014), dont l'activité principale est le business
-consulting et le conseil financier pour entrepreneuses.
+(SIREN 903 208 189, SIRET 903 208 189 00014). Elle exerce deux activités : le business consulting
+et le conseil financier pour entrepreneuses, et la gestion d'un patrimoine immobilier (code APE
+6820B — location de terrains et d'autres biens immobiliers).
 
 ## Services
 
@@ -18,6 +19,8 @@ consulting et le conseil financier pour entrepreneuses.
   de l'activité.
 - [Accompagnement du salariat à la liberté](https://sasha-consulting-vert.vercel.app/): passage à l'activité
   indépendante à temps plein.
+- [Gestion de patrimoine immobilier](https://sasha-consulting-vert.vercel.app/): acquisition de terrains,
+  exploitation et mise en valeur, édification de bâtiments et location de biens immobiliers.
 
 ## Pages
 

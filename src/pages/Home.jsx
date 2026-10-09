@@ -44,6 +44,14 @@ const HOME_LD = {
         text: "En quatre temps : diagnostic, stratégie, déploiement puis liberté. Un cadre qui s'adapte à l'activité, au rythme et aux objectifs de chacune.",
       },
     },
+    {
+      "@type": "Question",
+      name: "SASHA a-t-elle une activité immobilière ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Oui. SASHA est une Société civile immobilière (SCI) qui acquiert des terrains, les exploite et les met en valeur, y édifie des bâtiments et loue des biens immobiliers (code APE 6820B).",
+      },
+    },
   ],
   url: `${SITE_URL}/`,
 };
@@ -144,8 +152,8 @@ export default function Home() {
   return (
     <>
       <Seo
-        title="SASHA — Business consulting & financement pour entrepreneuses"
-        description="Sasha Libszia accompagne les entrepreneuses à faire exploser leur business sur les réseaux : stratégie, développement digital et pilotage financier. Du salariat à la liberté."
+        title="SASHA — Business consulting, financement & patrimoine immobilier"
+        description="Sasha Libszia accompagne les entrepreneuses sur les réseaux : stratégie, digital et pilotage financier. SASHA gère aussi un patrimoine immobilier (SCI, APE 6820B)."
         path="/"
         jsonLd={HOME_LD}
       />
@@ -366,36 +374,37 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ─────────── CONSULTING / FINANCE SPLIT ─────────── */}
+      {/* ─────────── IMMOBILIER ─────────── */}
       <section className="py-24 md:py-32">
         <div className="container-x">
           <Reveal className="overflow-hidden rounded-[32px] border border-white/10">
             <div className="grid lg:grid-cols-2">
-              <div className="relative min-h-[320px] lg:min-h-full">
+              <div className="relative min-h-[340px] lg:min-h-full">
                 <img
                   src="/images/consulting.png"
-                  alt="Sasha présentant une stratégie financière à des partenaires"
+                  alt="Sasha présentant un projet immobilier : plan de résidence et maquette du bâtiment"
                   loading="lazy"
                   className="absolute inset-0 h-full w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0b0710] via-transparent to-transparent lg:bg-gradient-to-r" />
               </div>
               <div className="bg-[#150c22] p-9 md:p-14">
-                <p className="eyebrow mb-6">Business consulting & financement</p>
+                <p className="eyebrow mb-6">Patrimoine immobilier</p>
                 <h2 className="text-[clamp(1.8rem,3.6vw,2.7rem)] text-white">
-                  La base de mon activité : remettre de la structure, et des chiffres.
+                  De la pierre, un patrimoine, une transmission.
                 </h2>
                 <p className="mt-6 leading-relaxed text-white/60">
-                  Conseil en stratégie, structuration d'offre, acquisition digitale et pilotage
-                  financier. Un accompagnement à 360° pour que ta croissance soit aussi solide
-                  qu'elle est visible.
+                  SASHA est aussi une société immobilière. Nous acquérons des terrains, les
+                  exploitons et les valorisons, puis éditions les bâtiments qui y prennent place.
+                  Une activité patrimoniale pensée dans la durée, en complément du conseil aux
+                  entrepreneuses.
                 </p>
                 <div className="mt-9 grid gap-5 sm:grid-cols-2">
                   {[
-                    "Positionnement & offre",
-                    "Stratégie de contenu",
-                    "Modèle économique & prix",
-                    "Financement & trésorerie",
+                    "Acquisition de terrains",
+                    "Exploitation & mise en valeur",
+                    "Édification de bâtiments",
+                    "Location de biens immobiliers",
                   ].map((item) => (
                     <div key={item} className="flex items-center gap-3 text-sm text-white/75">
                       <span className="h-1.5 w-1.5 rounded-full bg-orange-400" aria-hidden="true" />
@@ -403,13 +412,68 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
+                <p className="mt-8 border-l border-white/15 pl-5 text-sm leading-relaxed text-white/50">
+                  Activité immobilière exercée dans le cadre de la SCI SASHA — code APE{" "}
+                  <span className="text-white/75">6820B</span> (location de terrains et d'autres
+                  biens immobiliers).
+                </p>
                 <Link to="/a-propos" className="btn-primary mt-11">
-                  En savoir plus sur SASHA
+                  Voir les informations légales
                   <ArrowRight size={17} aria-hidden="true" />
                 </Link>
               </div>
             </div>
           </Reveal>
+        </div>
+      </section>
+
+      {/* ─────────── CONSULTING / FINANCE ─────────── */}
+      <section className="py-24 md:py-32">
+        <div className="container-x grid gap-14 lg:grid-cols-[1fr_1fr] lg:items-center">
+          <Reveal>
+            <p className="eyebrow mb-6">Business consulting & financement</p>
+            <h2 className="text-[clamp(1.8rem,3.6vw,2.7rem)] text-white">
+              La base de mon activité : remettre de la structure, et des chiffres.
+            </h2>
+            <p className="mt-6 leading-relaxed text-white/60">
+              Conseil en stratégie, structuration d'offre, acquisition digitale et pilotage
+              financier. Un accompagnement à 360° pour que ta croissance soit aussi solide qu'elle
+              est visible.
+            </p>
+            <Link to="/contact" className="btn-primary mt-10">
+              Réserver un appel découverte
+              <ArrowRight size={17} aria-hidden="true" />
+            </Link>
+          </Reveal>
+
+          <RevealGroup className="grid gap-5 sm:grid-cols-2" delay={0.1}>
+            {[
+              {
+                title: "Positionnement & offre",
+                text: "Un message clair et une offre que ton audience comprend immédiatement.",
+              },
+              {
+                title: "Stratégie de contenu",
+                text: "Un plan de publication qui construit ton autorité et génère des demandes.",
+              },
+              {
+                title: "Modèle économique & prix",
+                text: "Des tarifs alignés sur la valeur délivrée et sur tes objectifs de revenus.",
+              },
+              {
+                title: "Financement & trésorerie",
+                text: "Un pilotage simple pour décider sereinement et sécuriser ta croissance.",
+              },
+            ].map((card) => (
+              <RevealItem
+                key={card.title}
+                className="rounded-3xl border border-white/10 bg-white/[0.03] p-7 transition-colors duration-300 hover:border-violet-400/40"
+              >
+                <h3 className="text-lg text-white">{card.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-white/60">{card.text}</p>
+              </RevealItem>
+            ))}
+          </RevealGroup>
         </div>
       </section>
 
