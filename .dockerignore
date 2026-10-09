@@ -1,0 +1,12 @@
+node_modules
+dist
+.git
+.gitignore
+.env
+.env.*
+!.env.example
+api
+vercel.json
+*.log
+README.md
+.DS_Store

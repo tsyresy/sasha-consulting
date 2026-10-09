@@ -1,0 +1,13 @@
+services:
+  web:
+    build: .
+    image: sasha-site
+    container_name: sasha-site
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      NODE_ENV: production
+      PORT: 3001
+    ports:
+      - "3001:3001"
